@@ -1,41 +1,30 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html class="no-js" <?php language_attributes(); ?>>
   <head>
-    <meta charset="utf-8">
+    <meta charset="<?php bloginfo('charset'); ?>">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Isabella - Interactive Digital Experiences</title>
-    <meta name="description" content="My name is  Isabella, the owner &amp; photographer of Isabella photography. I am based in San Francisco, United States.">
+    <title><?php bloginfo('name'); ?></title>
+    <meta name="description" content="<?php bloginfo('description'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Place favicon.ico in the root directory-->
-    <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192" href="img/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-    <link rel="manifest" href="img/manifest.json">
-    <meta property="og:description" content="My name is  Isabella, the owner &amp; photographer of Isabella photography. I am based in San Francisco, United States.">
-    <meta property="og:image" name="thumb" content="http://www.adatheme.com/isabella/img/og.jpg">
-    <meta property="og:title" content="Isabella – Interactive Digital Experiences">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="http://www.adatheme.com/isabella/">
-    <meta property="og:site_name" content="Isabella – Interactive Digital Experiences">
-    <meta name="description" content="My name is  Isabella, the owner &amp; photographer of Isabella photography. I am based in San Francisco, United States.">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="http://www.adatheme.com/isabella/">
-    <meta name="twitter:creator" content="@adatheme">
-    <meta name="twitter:title" content="Isabella – Interactive Digital Experiences">
-    <meta name="twitter:description" content="The work of Interactive Art Director and Designer Isabella.">
-    <meta name="twitter:image:src" content="http://www.adatheme.com/isabella/img/og.jpg">
+    <link rel="apple-touch-icon" sizes="57x57" href="<?php echo get_template_directory_uri(); ?>/img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="<?php echo get_template_directory_uri(); ?>/img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="<?php echo get_template_directory_uri(); ?>/img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="<?php echo get_template_directory_uri(); ?>/img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="<?php echo get_template_directory_uri(); ?>/img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="<?php echo get_template_directory_uri(); ?>/img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="<?php echo get_template_directory_uri(); ?>/img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="<?php echo get_template_directory_uri(); ?>/img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="<?php echo get_template_directory_uri(); ?>/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="<?php echo get_template_directory_uri(); ?>/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="<?php echo get_template_directory_uri(); ?>/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="<?php echo get_template_directory_uri(); ?>/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="<?php echo get_template_directory_uri(); ?>/img/favicon-16x16.png">
+    <link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/img/manifest.json">
+    
+    
     <meta name="msapplication-TileColor" content="#2c3e50">
-    <meta name="msapplication-TileImage" content="img/ms-icon-144x144.png">
+    <meta name="msapplication-TileImage" content="<?php echo get_template_directory_uri(); ?>/img/ms-icon-144x144.png">
     <meta name="theme-color" content="#2c3e50">
 
     <?php wp_head(); ?>
@@ -44,7 +33,7 @@
     <header class="header" id="header">
       <div class="slider">
         <figure>
-            <img class="img-responsive" src="img/slider.jpg" alt="Slider" width="1600" height="645">
+            <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?> /img/slider.jpg" alt="Slider" width="1600" height="645">
             <div class="slider--message">
               <h4 class="title js-animation-slider">I Am Photography</h4>
               <a class="btn btn--slider btn--slider--white js-animation-slider" href="#project">See My Works</a>

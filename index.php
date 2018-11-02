@@ -57,56 +57,56 @@
           </ul> <!-- End controls -->
           <div class="filtr-container js-animation-bounceInUp">
             <div class="filtr-item" data-category="1, 7" data-sort="value">
-              <figure class="animation__hover"><img src="img/my-last-work-1.jpg" alt="Aerials">
+              <figure class="animation__hover"><img src="<?php echo get_template_directory_uri(); ?>/img/my-last-work-1.jpg" alt="Aerials">
                 <figcaption>
                   <h3>Lunar <span>Moon</span></h3>
                 </figcaption><a href="#"></a>
               </figure>
             </div> <!-- Item one -->
             <div class="filtr-item" data-category="2, 1, 5" data-sort="value">
-              <figure class="animation__hover"><img src="img/my-last-work-2.jpg" alt="Africa">
+              <figure class="animation__hover"><img src="<?php echo get_template_directory_uri(); ?>/img/my-last-work-2.jpg" alt="Africa">
                 <figcaption>
                   <h3>Happy <span>Couple</span></h3>
                 </figcaption><a href="#"></a>
               </figure>
             </div> <!-- Item two -->
             <div class="filtr-item" data-category="3, 6, 1" data-sort="value">
-              <figure class="animation__hover"><img src="img/my-last-work-3.jpg" alt="Asia">
+              <figure class="animation__hover"><img src="<?php echo get_template_directory_uri(); ?>/img/my-last-work-3.jpg" alt="Asia">
                 <figcaption>
                   <h3>Best <span>Drinks</span></h3>
                 </figcaption><a href="#"></a>
               </figure>
             </div> <!-- Item three -->
             <div class="filtr-item" data-category="4, 2, 5" data-sort="value">
-              <figure class="animation__hover"><img src="img/my-last-work-4.jpg" alt="Best Of">
+              <figure class="animation__hover"><img src="<?php echo get_template_directory_uri(); ?>/img/my-last-work-4.jpg" alt="Best Of">
                 <figcaption>
                   <h3>Best <span>Juice</span></h3>
                 </figcaption><a href="#"></a>
               </figure>
             </div> <!-- Item four -->
             <div class="filtr-item" data-category="5, 1, 3" data-sort="value">
-              <figure class="animation__hover"><img src="img/my-last-work-5.jpg" alt="Europe">
+              <figure class="animation__hover"><img src="<?php echo get_template_directory_uri(); ?>/img/my-last-work-5.jpg" alt="Europe">
                 <figcaption>
                   <h3>London <span>Street</span></h3>
                 </figcaption><a href="#"></a>
               </figure>
             </div> <!-- Item five -->
             <div class="filtr-item" data-category="6, 3, 5" data-sort="value">
-              <figure class="animation__hover"><img src="img/my-last-work-6.jpg" alt="Pacific">
+              <figure class="animation__hover"><img src="<?php echo get_template_directory_uri(); ?>/img/my-last-work-6.jpg" alt="Pacific">
                 <figcaption>
                   <h3>Boy <span>Girl</span></h3>
                 </figcaption><a href="#"></a>
               </figure>
             </div> <!-- Item six -->
             <div class="filtr-item" data-category="1, 4, 2" data-sort="value">
-              <figure class="animation__hover"><img src="img/my-last-work-7.jpg" alt="Aerials">
+              <figure class="animation__hover"><img src="<?php echo get_template_directory_uri(); ?>/img/my-last-work-7.jpg" alt="Aerials">
                 <figcaption>
                   <h3>Girl<span>Beatiful</span></h3>
                 </figcaption><a href="#"></a>
               </figure>
             </div> <!-- Item seven -->
             <div class="filtr-item" data-category="2, 3, 6" data-sort="value">
-              <figure class="animation__hover"><img src="img/my-last-work-8.jpg" alt="Aerials">
+              <figure class="animation__hover"><img src="<?php echo get_template_directory_uri(); ?>/img/my-last-work-8.jpg" alt="Aerials">
                 <figcaption>
                   <h3>Man <span>Polo</span></h3>
                 </figcaption><a href="#"></a>
@@ -136,7 +136,7 @@
         <div class="testimonials__slides">
           <div>
             <figure>
-              <img class="img-responsive" src="img/testimonial-1.jpg" alt="Testimonial 1" width="114" height="114">
+              <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/testimonial-1.jpg" alt="Testimonial 1" width="114" height="114">
             </figure>
             <blockquote>" Sometimes when I'm talking to other people, my words can't keep up with my thoughts. I wonder why we think faster than we speak."</blockquote>
             <strong> Pelican Steve,</strong>
@@ -145,7 +145,7 @@
           </div> <!-- End Terstimonial one -->
           <div>
             <figure>
-              <img class="img-responsive" src="img/testimonial-2.jpg" alt="Testimonial 2" width="114" height="114">
+              <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/testimonial-2.jpg" alt="Testimonial 2" width="114" height="114">
             </figure>
             <blockquote>" Thank you. before I begin, I'd like everyone to notice that my report is in a professional, clear plastic binder...When a report looks this good."</blockquote>
             <strong> Max Conversion,</strong>
@@ -154,7 +154,7 @@
           </div> <!-- End Terstimonial two -->
           <div>
             <figure>
-              <img class="img-responsive" src="img/testimonial-3.jpg" alt="Testimonial 3" width="114" height="114">
+              <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/testimonial-3.jpg" alt="Testimonial 3" width="114" height="114">
             </figure>
             <blockquote>" My behaviour is addictive functioning in a disease process of toxic co-dependency. I need holistic healing and wellness before. "</blockquote>
             <strong> eleanor faint,</strong>
@@ -171,7 +171,7 @@
           <div class="blog__item">
             <figure class="blog__item--new">
               <div class="image">
-                <img class="img-responsive" src="img/blog-1.jpg" alt="Steve's DigiCams" width="800" height="1020">
+                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/blog-1.jpg" alt="Steve's DigiCams" width="800" height="1020">
               </div>
               <figcaption>
                 <div class="date">
@@ -185,7 +185,7 @@
             </figure> <!-- Item Blog one -->
             <figure class="blog__item--new">
               <div class="image">
-                <img class="img-responsive" src="img/blog-2.jpg" alt="Digital Photo Review" width="800" height="1020">
+                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/blog-2.jpg" alt="Digital Photo Review" width="800" height="1020">
               </div>
               <figcaption>
                 <div class="date">
@@ -199,7 +199,7 @@
             </figure> <!-- Item Blog two -->
             <figure class="blog__item--new">
               <div class="image">
-                <img class="img-responsive" src="img/blog-3.jpg" alt="Photography Bay" width="800" height="1020">
+                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/blog-3.jpg" alt="Photography Bay" width="800" height="1020">
               </div>
               <figcaption>
                 <div class="date">
