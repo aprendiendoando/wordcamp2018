@@ -1,3 +1,16 @@
+/*
+Theme Name: Isabella
+Theme URI: https://wordpress.org/themes/isabella/
+Author: Yan Arlex Vallejo
+Author URI: https://aprendiendoando.com/
+Description: My name is  Isabella, the owner & photographer of Isabella photography. I am based in San Francisco, United States.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: one-column, two-columns, right-sidebar, flexible-header, accessibility-ready, custom-colors, custom-header, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, post-formats, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready
+*/
+
+
 /*------------------------------------*
     $CONTENT
 \*------------------------------------*/
@@ -5,13 +18,13 @@
   font-family: 'slick';
   font-weight: normal;
   font-style: normal;
-  src: url("fonts/slick/slick.eot");
-  src: url("fonts/slick/slick.eot?#iefix") format('embedded-opentype'), url("fonts/slick/slick.woff") format('woff'), url("fonts/slick/slick.ttf") format('truetype'), url("./fonts/slick.svg#slick") format('svg');
+  src: url("css/fonts/slick/slick.eot");
+  src: url("css/fonts/slick/slick.eot?#iefix") format('embedded-opentype'), url("css/fonts/slick/slick.woff") format('woff'), url("css/fonts/slick/slick.ttf") format('truetype'), url("./fonts/slick.svg#slick") format('svg');
 }
 @font-face {
   font-family: 'isabella';
-  src: url("fonts/isa/isabella.eot?8zolgs");
-  src: url("fonts/isa/isabella.eot?8zolgs#iefix") format('embedded-opentype'), url("fonts/isa/isabella.ttf?8zolgs") format('truetype'), url("fonts/isa/isabella.woff?8zolgs") format('woff'), url("fonts/isa/isabella.svg?8zolgs#isabella") format('svg');
+  src: url("css/fonts/isa/isabella.eot?8zolgs");
+  src: url("css/fonts/isa/isabella.eot?8zolgs#iefix") format('embedded-opentype'), url("css/fonts/isa/isabella.ttf?8zolgs") format('truetype'), url("css/fonts/isa/isabella.woff?8zolgs") format('woff'), url("css/fonts/isa/isabella.svg?8zolgs#isabella") format('svg');
   font-weight: normal;
   font-style: normal;
 }
