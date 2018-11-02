@@ -70,11 +70,7 @@
    
    
     <!-- Javascript scripts needed to run the website -->
-
+      
       <?php wp_footer(); ?>
-
-
-
-
   </body>
 </html>
