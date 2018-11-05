@@ -40,7 +40,7 @@
         <!-- Start Services -->
         <h3 class="title title--section-secundary text text-center">Services</h3>
         <div class="line line--min"></div>
-          <article class="photostyles__item text margin--big text-center">
+          <section class="photostyles__item text margin--big text-center">
           <?php
               // Loop Last Courses LearnPress
                 $args = array(
@@ -51,21 +51,14 @@
                 $lastServices = new WP_Query( $args );
                   if( $lastServices->have_posts() ):
                       while( $lastServices->have_posts() ): $lastServices->the_post();
-          ?>
-                          <div class="photostyles__box js-photostyles--left">
-                            <span class="fa <?php the_field('icono'); ?>"></span>
-                            <h3 class="photostyles--title"><?php the_title(); ?></h3>
-                            <p class="photostyles--information"><?php the_field('informacion_destacada');?></p>
-                            <a class="btn btn--primary" href="<?php the_permalink(); ?>">Read More</a>
-                          </div> <!-- Services item one -->
-          <?php
+                        get_template_part( 'parts/content', 'grid' ); 
                       endwhile;
                   else:
                     get_template_part( 'parts/content', 'missing' );
                   endif;
                   wp_reset_postdata();
           ?>
-          </article> <!-- End Services -->
+          </section> <!-- End Services -->
       </section>      
     </main> <!-- End Main -->
 <?php get_footer(); ?>
