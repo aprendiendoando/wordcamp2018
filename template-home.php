@@ -212,9 +212,9 @@
             ?>
           </div>
           <!-- Button all Blogs -->
-          <a class="btn btn--center btn--center--big" href="archive.html" title="View all blog posts">
+          <!-- <a class="btn btn--center btn--center--big" href="javascript:void(0);" title="View all blog posts">
             View all blog posts
-          </a>
+          </a> -->
         </div>
       </section> <!-- End blog -->
     </main> <!-- End Main -->

@@ -7,11 +7,10 @@
             </span>
             <div class="form" >
               <?php
-              $contactoForm = get_field('contacto_id_del_formulario','option');
-              $short = '[contact-form-7 id="' . $contactoForm . '" ]';
-              echo do_shortcode($short);
-            ?>
-              
+                $contactoForm = get_field('contacto_id_del_formulario','option');
+                $short = '[contact-form-7 id="' . $contactoForm . '" ]';
+                echo do_shortcode($short);
+              ?>              
             </div> <!-- Form contact -->
         </section>
       </div> <!-- End Footer Contact -->
