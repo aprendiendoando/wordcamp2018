@@ -2875,3 +2875,15 @@ body {
 .footer:focus{
   outline: none;
 }
+
+/* Plugins */
+
+@media screen and (min-width:768px){
+  .wpcf7-form-control-wrap{
+    margin-right: 28px;
+  }
+
+  .wpcf7-form-control-wrap.email{
+    margin-right: 0;
+  }
+}

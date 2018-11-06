@@ -4,8 +4,8 @@
 <?php get_header(); ?>
     <main class="main">
       <section class="scrollto photostyles box box--bottom-padding" id="photostyles">
-        <h2 class="text text-center title title--main">Photo Styles</h2>
-        <span class="text text-center title title--secundary">We strive to have a wide range of styles in photography. We love to mix and make photography an unforgettable memory.</span>
+        <h2 class="text text-center title title--main"><?php the_field('photo_titulo', 'option'); ?></h2>
+        <span class="text text-center title title--secundary"><?php the_field('photo_subtitulo', 'option'); ?></span>
         <article class="photostyles__item text text-center">
           <h3 class="title title--section-secundary text text-center">Services</h3>
             <div class="line line--min"></div>
@@ -106,15 +106,13 @@
         </div>
       </section><!-- End project -->
       <section class="isabella scrollto" id="isabella">
-        <article class="isabella__image"></article> <!-- Image Background CSS -->
+        <article class="isabella__image" style="background-image: url('<?php the_field('biografia_imagen', 'option'); ?>');"></article> <!-- Image Background CSS -->
         <article class="isabella__information">
-          <span class="text--uppercase">50 high quality images</span>
-          <h4 class="text--uppercase"> Lifestyle & Travel</h4>
+          <span class="text--uppercase"><?php the_field('biografia_texto_secundario', 'option'); ?></span>
+          <h4 class="text--uppercase"><?php the_field('biografia_titulo_principal', 'option'); ?></h4>
           <hr>
-          <em>My name is  Isabella, the owner & photographer of Isabella photography. I am based in San Francisco, United States</em>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          <p> Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry. Lorem Ipsum is simply dummy text of the printing and typesetting.</p>
-          <a class="btn btn--slider btn--slider--white" href="services-aerials.html" title="View Gallery">
+          <?php the_field('biografia_descripcion', 'option'); ?>
+          <a class="btn btn--slider btn--slider--white" href="<?php the_field('biografia_url_mis_trabajos', 'option'); ?>" title="View Gallery">
             View Gallery
           </a>
         </article> <!-- Information right Isabella -->

@@ -38,8 +38,8 @@
             <figure>
                 <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?> /img/slider.jpg" alt="Slider" width="1600" height="645">
                 <div class="slider--message">
-                  <h4 class="title js-animation-slider">I Am Photography</h4>
-                  <a class="btn btn--slider btn--slider--white js-animation-slider" href="#project">See My Works</a>
+                  <h4 class="title js-animation-slider"><?php the_field('hero_texto_principal', 'option'); ?></h4>
+                  <a class="btn btn--slider btn--slider--white js-animation-slider" href="<?php the_field('hero_boton', 'option'); ?>">See My Works</a>
               </div>
             </figure>
         </div> <!-- End Slider -->
@@ -48,7 +48,7 @@
       ?>
       <div class="header__top <?php if( !is_front_page()){ echo "header__top--internal"; } ?>">
         <h1>
-            <a class="logo" href="index.html" title="Isabella - Interactive Digital Experiences"></a>
+            <a class="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="Isabella - Interactive Digital Experiences"></a>
         </h1> <!-- End Logo -->
         <a class="icon-nav" href="#" id="togle-nav">
           <span></span>
