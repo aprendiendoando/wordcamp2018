@@ -124,33 +124,46 @@
           our customers
         </span>
         <div class="testimonials__slides">
-          <div>
-            <figure>
-              <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/testimonial-1.jpg" alt="Testimonial 1" width="114" height="114">
-            </figure>
-            <blockquote>" Sometimes when I'm talking to other people, my words can't keep up with my thoughts. I wonder why we think faster than we speak."</blockquote>
-            <strong> Pelican Steve,</strong>
-            <span> Marketing Manager</span>
-            <span class="text--basecolor">Hubboard Media</span>
-          </div> <!-- End Terstimonial one -->
-          <div>
-            <figure>
-              <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/testimonial-2.jpg" alt="Testimonial 2" width="114" height="114">
-            </figure>
-            <blockquote>" Thank you. before I begin, I'd like everyone to notice that my report is in a professional, clear plastic binder...When a report looks this good."</blockquote>
-            <strong> Max Conversion,</strong>
-            <span> CFO</span>
-            <span class="text--basecolor"> Creative Space Inc.</span>
-          </div> <!-- End Terstimonial two -->
-          <div>
-            <figure>
-              <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/testimonial-3.jpg" alt="Testimonial 3" width="114" height="114">
-            </figure>
-            <blockquote>" My behaviour is addictive functioning in a disease process of toxic co-dependency. I need holistic healing and wellness before. "</blockquote>
-            <strong> eleanor faint,</strong>
-            <span> Developer</span>
-            <span class="text--basecolor"> WikiMedia</span>
-          </div> <!-- End Terstimonial three -->
+          <?php
+                  // Loop Last Courses LearnPress
+                    $args = array(
+                            'posts_per_page' => 3,
+                            'post_type' => 'testimonios'
+                        );
+                    $lastTestimonial = new WP_Query( $args );
+                     if( $lastTestimonial->have_posts() ):
+                        while( $lastTestimonial->have_posts() ): $lastTestimonial->the_post();
+          ?> 
+                          <div>
+                            <figure>
+                              <?php
+                                  if ( has_post_thumbnail() ) { 
+                                      the_post_thumbnail('full', ['class' => 'img-responsive'] );
+                                  }else{
+                                ?>
+                                      <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/testimonial-not-image.jpg" alt="Testimonial Isabella" width="114" height="114">
+                                <?php
+                                  }
+                                ?>                              
+                            </figure>
+                            <blockquote>" <?php the_field('testimonios_mensaje'); ?>"</blockquote>
+                            <strong> <?php the_title(); ?></strong>
+                            <span> <?php the_field('testimonios_perfil'); ?></span>
+                            <span class="text--basecolor"><?php the_field('testimonios_compania'); ?></span>
+                          </div> <!-- End Terstimonial -->
+          <?php
+                         endwhile;
+                    else:
+                        get_template_part( 'parts/content', 'missing' );
+                    endif;
+                    wp_reset_postdata();
+          ?>
+
+
+
+
+
+
         </div>
       </section> <!-- End testimonials -->
       <section class="blog scrollto" id="blog">

@@ -35,10 +35,6 @@
             endwhile; // End of the loop.
         ?>
 
-
-
-
-
           <aside class="sidebar">
             <div class="widget">
               <h5 class="title title--section text-center">News Recients</h5>
