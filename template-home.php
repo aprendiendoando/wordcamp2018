@@ -159,48 +159,46 @@
             latest news
           </span>
           <div class="blog__item">
-            <figure class="blog__item--new">
-              <div class="image">
-                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/blog-1.jpg" alt="Steve's DigiCams" width="800" height="1020">
-              </div>
-              <figcaption>
-                <div class="date">
-                  <span class="day">02</span>
-                  <span class="month">Oct</span>
-                </div>
-                <h3>Steve's DigiCams</h3>
-                <p>The Steve's DigiCams site includes a blog on the front page, which monitors all of the latest digital.</p>
-              </figcaption>
-              <a href="steve-digicams.html" title="Steve's DigiCams"></a>
-            </figure> <!-- Item Blog one -->
-            <figure class="blog__item--new">
-              <div class="image">
-                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/blog-2.jpg" alt="Digital Photo Review" width="800" height="1020">
-              </div>
-              <figcaption>
-                <div class="date">
-                  <span class="day">07</span>
-                  <span class="month">Nov</span>
-                </div>
-                <h3>Digital Photo Review</h3>
-                <p>This site is heavy on the latest digital camera news, which is one of its best features. The blog also keeps.</p>
-              </figcaption>
-              <a href="steve-digicams.html" title="Digital Photo Review"></a>
-            </figure> <!-- Item Blog two -->
-            <figure class="blog__item--new">
-              <div class="image">
-                <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/blog-3.jpg" alt="Photography Bay" width="800" height="1020">
-              </div>
-              <figcaption>
-                <div class="date">
-                  <span class="day">15</span>
-                  <span class="month">Dec</span>
-                </div>
-                <h3>Photography Bay</h3>
-                <p>If you're interested in learning more about the latest DSLR camera accessory gear, the Photography Bay.</p>
-              </figcaption>
-              <a href="steve-digicams.html" title="Photography Bay"></a>
-            </figure> <!-- Item Blog Three -->
+            <?php
+              // Loop Last Courses LearnPress
+                $args = array(
+                        'posts_per_page' => 3                        
+                    );
+                $lastBlog = new WP_Query( $args );
+                  if( $lastBlog->have_posts() ):
+                    while( $lastBlog->have_posts() ): $lastBlog->the_post();
+            ?>
+                  <figure class="blog__item--new">
+                    <div class="image">
+                      <?php
+                        if ( has_post_thumbnail() ) { 
+                            the_post_thumbnail('blog', ['class' => 'img-responsive'] );
+                        }else{
+                      ?>
+                           <img class="img-responsive" src="<?php echo get_template_directory_uri(); ?>/img/isabella-blog.jpg" alt="Isabella" width="800" height="1020">
+                      <?php
+                        }
+                      ?>
+                    </div>
+                    <figcaption>
+                      <div class="date">
+                        <?php $day = get_the_date( 'j' ); ?>
+                        <?php $month = get_the_date( 'M' ); ?>
+                        <span class="day"><?php echo $day; ?></span>
+                        <span class="month"><?php echo $month; ?></span>
+                      </div>
+                      <h3><?php the_title(); ?></h3>
+                      <?php the_excerpt(); ?>
+                    </figcaption>
+                    <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"></a>
+                  </figure> <!-- Item Blog -->
+            <?php
+                    endwhile;
+                  else:
+                      get_template_part( 'parts/content', 'missing' );
+                  endif;
+                  wp_reset_postdata();
+            ?>
           </div>
           <!-- Button all Blogs -->
           <a class="btn btn--center btn--center--big" href="archive.html" title="View all blog posts">
